@@ -21,12 +21,6 @@
 import HaSection from '@/components/global/HaSection.vue'
 import MultipleGoogleMap from '@/components/global/MultipleGoogleMap.vue'
 import { reactive, ref, onMounted } from 'vue'
-// import { useRouter } from 'vue-router'
-// import { getPosts, type PostFilter } from './api'
-
-// const router = useRouter()
-
-// const tableData = ref<any>([])
 
 const ui = reactive({
     isLoading: false,
@@ -55,20 +49,6 @@ const fetchPosts = async () => {
         ui.isLoading = false
     }
 }
-
-// const fetchPosts = async () => {
-//     try {
-//         ui.isLoading = true
-//         const { res } = await getPosts(filter)
-//         tableData.value = res.data?.phongTroList // chỉ lấy danh sách
-
-//         console.log('tableData :', res)
-//     } catch (e) {
-//         console.error(e)
-//     } finally {
-//         ui.isLoading = false
-//     }
-// }
 
 onMounted(() => {
     fetchPosts()

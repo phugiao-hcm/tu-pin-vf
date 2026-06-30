@@ -17,7 +17,7 @@ export const usePostBreadcrumb = () => {
     return {
       level_1: {
         hard_code: true,
-        name: 'Danh sách phòng',
+        name: 'Danh sách',
       },
     }
   }

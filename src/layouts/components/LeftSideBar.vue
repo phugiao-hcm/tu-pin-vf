@@ -117,7 +117,7 @@ const menuList = computed(() => [
     },
     {
         title: 'Vị trí bản đồ',
-        icon: Document,
+        icon: Location,
         index: 'maps',
         name: 'MapsList',
         actives: ['MapsList'],
