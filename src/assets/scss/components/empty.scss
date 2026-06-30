@@ -1,0 +1,20 @@
+/* Style chung với design system for page empty global */
+.el-empty {
+    height: 60vh;
+
+    p {
+        margin: 8px 0;
+    }
+}
+
+.el-empty__description {
+    width: 752px;
+    @media only screen and (max-width: 992px) {
+        width: auto;
+        height: auto;
+    }
+}
+
+.el-empty__image {
+    width: auto;
+}

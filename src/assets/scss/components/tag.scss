@@ -1,0 +1,45 @@
+.el-tag {
+    border-radius: 16px;
+    padding: 0 12px;
+    height: auto;
+    /*
+    padding: 4px 12px;
+    line-height: unset;
+    height: unset;
+    */
+    border: none;
+}
+.el-tag.el-tag--primary {
+    background: var(--primary-100);
+    color: var(--primary-600);
+}
+.el-tag.el-tag--success {
+    background: var(--secondary-green-100);
+    color: var(--secondary-green-600);
+}
+.el-tag.el-tag--warning {
+    background: var(--secondary-orange-100);
+    color: var(--secondary-orange-600);
+}
+.el-tag.el-tag--danger {
+    background: var(--secondary-red-100);
+    color: var(--secondary-red-600);
+}
+.el-tag.el-tag--info {
+    background: var(--neutral-100);
+    color: var(--neutral-600);
+}
+.el-tag.el-tag--purple {
+    background: var(--secondary-purple-100);
+    color: var(--secondary-purple-600);
+}
+
+.el-tag--medium {
+    padding: 8px 12px;
+    max-height: 32px;
+}
+
+.el-tag__square {
+    border: 1px solid var(--primary-200);
+    border-radius: 4px;
+}

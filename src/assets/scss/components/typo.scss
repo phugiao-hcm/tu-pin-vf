@@ -1,0 +1,18 @@
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-item-hidden {
+    width: 310px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.el-dropdown-link {
+    cursor: pointer;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}

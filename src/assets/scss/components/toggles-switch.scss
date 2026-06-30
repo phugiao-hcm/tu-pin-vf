@@ -1,0 +1,26 @@
+.el-switch {
+    .el-switch__core {
+        border-radius: 12px;
+        background-color: var(--neutral-300) !important;
+
+        &:active {
+            background-color: var(--neutral-300) !important;
+        }
+    }
+    &:focus {
+        background: var(--neutral-300);
+    }
+}
+
+.el-switch.is-checked {
+    .el-switch__core {
+        background-color: var(--primary-600) !important;
+        &:active {
+            background-color: var(--primary-600) !important;
+        }
+    }
+}
+
+.el-switch.is-disabled {
+    border-color: var(--primary-200);
+}

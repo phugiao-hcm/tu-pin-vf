@@ -1,0 +1,30 @@
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 8px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--neutral-300);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    width: 12px;
+    background-color: var(--neutral-400);
+}
+
+.scroll {
+    overflow: auto;
+
+    .el-scrollbar__thumb {
+        border-radius: 10px;
+        background-color: var(--neutral-300);
+        box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+        &:hover {
+            width: 12px;
+            background-color: var(--neutral-400);
+        }
+    }
+}

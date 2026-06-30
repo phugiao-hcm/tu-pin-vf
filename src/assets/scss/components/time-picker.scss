@@ -1,0 +1,58 @@
+.el-date-editor--time {
+    .el-input__icon {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .el-icon-circle-check {
+        display: none;
+    }
+}
+.el-date-editor--time-select {
+    .el-input__inner {
+        text-align: center;
+    }
+    .el-input__icon {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .el-icon-circle-check {
+        display: none;
+    }
+}
+.el-date-editor.el-input.is-disabled .el-input__inner {
+    border-color: var(--neutral-200);
+    background: var(--neutral-50);
+}
+.time-select {
+    background: var(--neutral-0);
+    box-shadow: 0px 4px 12px 0px rgba(13, 10, 44, 0.06);
+    .time-select-item {
+        padding: 8px 12px;
+        margin: 0 4px;
+
+        color: var(--neutral-600);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+
+        &:hover {
+            background: var(--neutral-50);
+            border-radius: 4px;
+        }
+    }
+}
+
+
+.el-time-select-hidden-input__suffix {
+    .el-input__inner {
+        padding-right: 8px
+    }
+    .el-input__suffix {
+        display: none;
+    }
+
+}

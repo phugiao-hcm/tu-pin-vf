@@ -1,0 +1,28 @@
+.el-link {
+    vertical-align: unset;
+}
+.el-link.el-link--primary {
+    color: var(--primary-600);
+    .el-link--inner {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        &:hover {
+            color: var(--primary-600);
+        }
+    }
+    [class^="icon-"],
+    [class*=" icon-"] {
+        color: var(--primary-600);
+    }
+}
+
+a {
+    word-break: break-word;
+}
+
+p,
+span {
+    word-break: break-word;
+}

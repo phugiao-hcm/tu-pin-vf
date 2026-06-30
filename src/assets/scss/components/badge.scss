@@ -1,0 +1,41 @@
+.el-badge__content {
+    width: 18px;
+    padding: 0 2px;
+    font-size: 8px;
+    background-color: var(--secondary-red-500);
+
+    color: var(--neutral-0);
+    /* Body extra small/Small cap */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.el-badge__content.is-fixed {
+    top: 4px;
+}
+
+.el-button--info-badge {
+    background: var(--neutral-100);
+    color: var(--neutral-700);
+
+    &:hover {
+        background: var(--neutral-200);
+    color: var(--neutral-700);
+    }
+    &:active, &:focus {
+        background: var(--neutral-200);
+        color: var(--neutral-700);
+    }
+}
+
+/* Xử lý thêm cho class .box-card-notification của push notification */
+.box-card-notification {
+    .el-card__body {
+        padding: 16px;
+
+        height: 640px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}

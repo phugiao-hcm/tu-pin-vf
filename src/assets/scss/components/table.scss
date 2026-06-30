@@ -1,0 +1,140 @@
+.el-table-outer {
+    border: 1px solid var(--neutral-300);
+    border-radius: 6px;
+    padding: 1px;
+
+    .el-pagination {
+        padding: 8px 16px;
+    }
+}
+
+.el-table {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
+    .el-table__fixed {
+        bottom: 0;
+    }
+
+    .el-table__fixed-right {
+        right: 6px !important;
+    }
+
+    th.el-table__cell > .cell {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .cell:first-child {
+        padding-left: 12px;
+    }
+
+    td.el-table__cell {
+        border-bottom: 0.5px solid var(--neutral-200);
+    }
+}
+
+.el-pagination {
+    margin-top: unset;
+
+    button {
+        height: 32px !important;
+    }
+
+    .number,
+    .more {
+        border-radius: 4px !important;
+        height: 32px;
+        width: 36px;
+
+        color: var(--neutral-600);
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .el-select .el-input .el-input__inner {
+        border-radius: 6px;
+        border: 1px solid var(--neutral-300);
+        background: var(--neutral-0);
+        height: 32px;
+    }
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: var(--primary-600);
+    border: 1px solid var(--primary-600);
+
+    color: var(--neutral-0);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+    border-radius: 4px;
+    border: 1px solid var(--neutral-300);
+    background: var(--neutral-0);
+
+    color: var(--neutral-600);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.custom-footer {
+    background: var(--neutral-50);
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+.el-pagination button,
+.el-pagination span:not([class*="suffix"]) {
+    line-height: 32px;
+    height: 32px;
+}
+
+.el-pagination__editor.el-input {
+    width: 60px;
+}
+
+.el-table__fixed-right::before,
+.el-table__fixed::before,
+.el-table--border::after,
+.el-table--group::after,
+.el-table::before {
+    border: none;
+    background-color: unset;
+}
+
+.el-table__empty-block {
+    /* Xử lý sticky empty page khi scroll */
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    left: 0;
+    width: auto !important;
+}
+
+/* custome max-height table */
+/* 
+.el-table {
+    max-height: unset !important;
+
+    .el-table__body-wrapper {
+        max-height: calc(100vh - 106px - 6em) !important;
+    }
+
+    .el-table__fixed-body-wrapper {
+        max-height: calc(100vh - 116px - 6em) !important;
+    }
+}
+ */

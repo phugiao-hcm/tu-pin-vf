@@ -1,0 +1,49 @@
+.el-notification {
+    padding: 8px;
+
+    @media only screen and (max-width: 992px) {
+        width: -webkit-fill-available;
+        left: 16px;
+    }
+}
+
+.el-notification__group {
+    margin: unset;
+}
+
+.custom-alert-notification {
+    width: 420px;
+}
+
+.custom-alert-notification-reconciliation {
+    cursor: pointer;
+    width: 420px;
+
+    .el-notification__closeBtn {
+        top: 50%;
+    }
+
+    /* START custom-grid */
+    .custom-grid-notification-reconciliation {
+        display: grid;
+        grid-template-columns: 64px auto 20px;
+        gap: 8px;
+
+        .custom-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 6px;
+            position: relative;
+
+            span,
+            img,
+            .el-image {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    /* END custom-grid */
+}

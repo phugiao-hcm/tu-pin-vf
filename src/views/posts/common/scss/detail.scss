@@ -1,0 +1,161 @@
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1440px;
+
+.custom-header-action {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: baseline;
+    justify-items: flex-end;
+
+    @media only screen and (max-width: $breakpoint-md) {
+        grid-template-columns: 1fr;
+        justify-items: flex-start;
+    }
+
+    .position-item-2 {
+        margin-left: 8px;
+        margin-right: 16px;
+    }
+}
+
+.custom-card {
+    margin-top: 16px;
+    border-radius: 8px;
+
+    &:first-of-type {
+        margin-top: unset;
+    }
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.custom-grid-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    align-items: left; /* Căn giữa theo chiều dọc */
+    text-align: center; /* Căn giữa nội dung bên trong các div */
+
+    p {
+        margin: 4px 0;
+    }
+
+    @media only screen and (max-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ------------ START IMAGE ------------ */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+
+    @media only screen and (max-width: $breakpoint-md) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-item {
+        flex: 1;
+    }
+}
+.image-box {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 2px solid transparent;
+
+    /* Overlay tối bằng pseudo-element */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.05); /* 5% tối */
+        z-index: 1;
+        pointer-events: none; /* để không cản trở tương tác */
+    }
+}
+.image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-label {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    background: var(--secondary-orange-100);
+    color: white;
+    padding: 0 8px 0 4px;
+    border-radius: 4px;
+    height: 20px;
+}
+
+/* ------------ START FACILITIES ------------ */
+.custom-card-facilities {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+
+    .item {
+        border-bottom: 1px dashed var(--neutral-200);
+        padding-bottom: 12px;
+    }
+
+    @media only screen and (max-width: $breakpoint-md) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.custom-card-price-outer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 16px;
+
+    @media only screen and (max-width: $breakpoint-md) {
+        grid-template-columns: 1fr;
+    }
+}
+.custom-card-price {
+    border: 1px solid var(--neutral-200);
+    background: var(--neutral-25);
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.custom-border-orange {
+    border-top: 8px solid var(--secondary-orange-500);
+}
+
+.custom-border-purple {
+    border-top: 8px solid var(--secondary-purple-500);
+}
+
+.custom-border-primary {
+    border-top: 8px solid var(--primary-500);
+}
+
+.margin-y-md {
+    margin: 24px 0;
+}
+
+.custom-card-hourly {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.custom-icon {
+    width: 24px;
+    height: 24px;
+}

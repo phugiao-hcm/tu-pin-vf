@@ -1,0 +1,45 @@
+.el-progress {
+    line-height: 0;
+}
+
+.custom-gird-progress {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 7.5em 1fr auto;
+    margin: 24px 0;
+}
+
+.custom-gird-progress-mini {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 16px 1fr auto;
+    margin: 8px 0;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.el-progress-circle {
+    width: 158px !important;
+    height: 158px !important;
+}
+
+.el-progress-bar {
+    margin-right: unset;
+    padding-right: unset;
+}
+
+.el-progress-bar__outer {
+    margin: 0 16px;
+}
+
+.mini {
+    .el-progress-circle {
+        width: 32px !important;
+        height: 32px !important;
+    }
+}

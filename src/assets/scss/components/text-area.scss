@@ -1,0 +1,80 @@
+
+.el-textarea {
+    .el-input__count {
+        color: var(--neutral-400);
+        text-align: right;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 133.333% */
+    }
+    .el-textarea__inner {
+        padding: 10px 12px 0 16px;
+
+        color: var(--neutral-600);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        border-color: var(--neutral-300);
+        &:hover {
+            border-color: var(--neutral-400);
+        }
+        &:focus {
+            border-color: var(--primary-600);
+        }
+        &::placeholder {
+            color: var(--neutral-400);
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 142.857% */
+        }
+    }
+}
+.el-textarea.is-disabled {
+    .el-textarea__inner {
+        background: var(--neutral-50);
+        color: var(--neutral-600);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+    }
+}
+
+
+.el-form-item__error {
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--secondary-red-600);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    &:before {
+        background-image: url(@/assets/images/svg/error.svg);
+        background-size: 14px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 14px; 
+        height: 14px;
+        content:"";
+    }
+}
+.el-form-item__label {
+    color: var(--neutral-700);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    padding: 0 0 4px !important;
+}
